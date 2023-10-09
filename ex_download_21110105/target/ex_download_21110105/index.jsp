@@ -1,36 +1,37 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>21110105</title>
-    <link rel="stylesheet" href="styles/main.css" type="text/css"/>
-</head>
-<body>
-
-<h1>List of albums</h1>
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<c:if test="${cookie.firstNameCookie.value != null}">
-    <p>Welcome back, <c:out value='${cookie.firstNameCookie.value}'/></p>
-</c:if>
 
-<p>
-<a href="download?action=checkUser&amp;productCode=8601">
-    86 (the band) - True Life Songs and Pictures
-</a><br>
+    <c:import url="/includes/header.html" />
+    <c:import url="/includes/nav.html" />
 
-<a href="download?action=checkUser&amp;productCode=pf01">
-    Paddlefoot - The First CD
-</a><br>
+    <div class="wrap-ctn mx-auto min-h-[40rem] py-10 mt-20">
+        <div class="inner form-custom mx-auto">
+            <h1>List of albums</h1>
 
-<a href="download?action=checkUser&amp;productCode=pf02">
-    Paddlefoot - The Second CD
-</a><br>
+            <c:if test="${cookie.firstNameCookie.value != null}">
+                <p>Welcome back,
+                    <c:out value='${cookie.firstNameCookie.value}' />
+                </p>
+            </c:if>
 
-<a href="download?action=checkUser&amp;productCode=jr01">
-    Joe Rut - Genuine Wood Grained Finish
-</a>
-</p>
+            <p class="list-shoping">
+                <a href="download?action=checkUser&amp;productCode=8601" class="">
+                    86 (the band) - True Life Songs and Pictures
+                </a><br>
 
-</body>
-</html>
+                <a href="download?action=checkUser&amp;productCode=pf01">
+                    Paddlefoot - The First CD
+                </a><br>
+
+                <a href="download?action=checkUser&amp;productCode=pf02">
+                    Paddlefoot - The Second CD
+                </a><br>
+
+                <a href="download?action=checkUser&amp;productCode=jr01">
+                    Joe Rut - Genuine Wood Grained Finish
+                </a>
+            </p>
+        </div>
+    </div>
+
+
+    <%@ include file="/includes/footer.jsp" %>

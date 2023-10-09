@@ -7,10 +7,12 @@
                         <c:out value="${message}"></c:out>
                     </i></p>
             </c:if>
-    
-            <h1 class="text-center text-3xl text-white">Join our email list</h1>
-            <p class="text-white">To join our email list, enter your name and
-                email address below.</p>
+            <div class="wrap container mx-auto">
+                
+                <h1 class="text-center text-3xl text-white">Join our email list</h1>
+                <p class="text-white text-center">To join our email list, enter your name and
+                    email address below.</p>
+            </div>
             <jsp:useBean id="user" scope="session" class="Serializers.User" />
             <div class="main-section">
     

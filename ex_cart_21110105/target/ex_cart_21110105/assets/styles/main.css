@@ -35,27 +35,10 @@ br {
     clear: both;
 }
 
-/* The styles for the tables */
-table {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-th, td {
-    border: 1px solid black;
-    text-align: left;
-    padding: .5em;
-}
-
 /* The styles for the classes */
 .pad_top {
     padding-top: 0.25em;
 }
 .margin_left {
     margin-left: 0.5em;
-}
-.align_left {
-    text-align: left;
-}
-.align_right {
-    text-align: left;
 }

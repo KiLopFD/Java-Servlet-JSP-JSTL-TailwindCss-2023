@@ -1,19 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>21110105</title>
-    <link rel="stylesheet" href="styles/main.css" type="text/css"/>
-</head>
-<body>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<h1>Cookies</h1>
+    <c:import url="/includes/header.html" />
+    <c:import url="/includes/nav.html" />
+    <div class="wrap-ctn mx-auto min-h-[40rem] py-10 mt-20">
+        <div class="inner form-custom mx-auto">
+            <h1>Cookies</h1>
+        
+            <p>All persistent cookies have been removed from this browser.</p>
+        
+            <%@ include file="/includes/view_list.html" %>
 
-<p>All persistent cookies have been removed from this browser.</p>
+        </div>
+    </div>
 
-<p><a href="download?action=viewAlbums">View list of albums</a></p>
-
-<p><a href="?action=viewCookies">View all cookies</a></p>
-
-</body>
-</html>
+    <%@ include file="/includes/footer.jsp" %>

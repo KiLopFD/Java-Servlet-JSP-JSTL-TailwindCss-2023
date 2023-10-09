@@ -1,0 +1,32 @@
+@media screen and (min-width: 300px) {
+    .form-custom {
+        width: 100%;
+        padding: 0 1rem;
+    }
+}
+@media screen and (min-width: 600px) {
+    .form-custom {
+        width: 20rem;
+    }
+}
+@media screen and (min-width: 900px) {
+    .form-custom {
+        width: 30rem;
+    }
+}
+
+
+table a:hover{
+    color: greenyellow;
+    padding: 0.4rem;
+    scale: 1.1;
+    transition: all 0.5s ease-in-out;
+}
+.list-shoping a:hover{
+    color: greenyellow;
+    padding: 0.4rem;
+    scale: 1.1;
+    transition: all 0.5s ease-in-out;
+}
+
+
