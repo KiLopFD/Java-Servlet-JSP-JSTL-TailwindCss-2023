@@ -2,7 +2,7 @@
 
     <c:import url="/includes/header.html" />
     <c:import url="/includes/nav.html" />
-    <div class="wrap-ctn mx-auto min-h-[40rem] py-10 mt-20">
+    <div class="wrap-ctn mx-auto h-40 py-10 mt-20">
         <div class="inner form-custom mx-auto">
             <h1>Downloads</h1>
 

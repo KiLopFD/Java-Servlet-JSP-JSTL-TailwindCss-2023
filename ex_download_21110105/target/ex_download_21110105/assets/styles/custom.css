@@ -29,4 +29,10 @@ table a:hover{
     transition: all 0.5s ease-in-out;
 }
 
-
+/* .wrap-ctn{
+    min-height: 50rem;
+    height: auto;
+} */
+.wrap-ctn *{
+    text-align: center;
+}

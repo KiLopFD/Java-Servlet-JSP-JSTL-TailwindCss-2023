@@ -4,21 +4,21 @@
   <c:import url="/includes/header.html" />
   <c:import url="/includes/nav.html" />
 
-  <div class="wrap-ctn mx-auto min-h-[40rem] py-10 mt-20 container">
+  <div class="wrap-ctn mx-auto md:py-40 py-20 md:px-10 px-5 mt-20 container">
 
-    <h1 class="text-center">Your cart</h1>
+    <h1 class="text-center text-3xl mb-5">Your cart</h1>
 
-    <table class="table-auto w-full text-sm text-left text-gray-400">
+    <table class="table-auto w-full text-sm text-left text-gray-400 rounded-lg overflow-hidden">
       <thead class="">
         <tr>
-          <th>Quantity</th>
-          <th>Description</th>
-          <th>Price</th>
-          <th>Amount</th>
-          <th></th>
+          <th class="px-5">Quantity</th>
+          <th class="px-5">Description</th>
+          <th class="px-5">Price</th>
+          <th class="px-5">Amount</th>
+          <th class="px-5"></th>
         </tr>
       </thead>
-      <tbody class="bg-gray-800">
+      <tbody class="bg-gray-800 rounded-lg overflow-hidden">
 
         <c:forEach var="item" items="${cart.items}">
           <tr>

@@ -46,19 +46,25 @@ public class DownloadServlet extends HttpServlet {
     public void doPost(HttpServletRequest request,
             HttpServletResponse response)
             throws IOException, ServletException {
-
-        String action = request.getParameter("action");
-        
-        // perform action and set URL to appropriate page
-        String url = "/index.jsp";
-        if (action.equals("registerUser")) {
-            url = registerUser(request, response);
+        try {
+            
+            String action = request.getParameter("action");
+            
+            // perform action and set URL to appropriate page
+            String url = "/index.jsp";
+            if (action.equals("registerUser")) {
+                url = registerUser(request, response);
+            }
+    
+            // forward to the view
+            getServletContext()
+                    .getRequestDispatcher(url)
+                    .forward(request, response);
+        } catch (Exception e) {
+            getServletContext()
+                    .getRequestDispatcher("/index.jsp")
+                    .forward(request, response);
         }
-
-        // forward to the view
-        getServletContext()
-                .getRequestDispatcher(url)
-                .forward(request, response);
     }
 
     private String checkUser(HttpServletRequest request,

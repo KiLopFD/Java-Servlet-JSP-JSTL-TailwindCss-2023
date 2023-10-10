@@ -3,17 +3,17 @@
     <c:import url="/includes/header.html" />
     <c:import url="/includes/nav.html" />
 
-    <div class="wrap-ctn mx-auto min-h-[40rem] py-10 mt-20">
+    <div class="wrap-ctn mx-auto py-40 mt-20">
         <div class="inner form-custom mx-auto">
-            <h1>List of albums</h1>
+            <h1 class="text-center">List of albums</h1>
 
             <c:if test="${cookie.firstNameCookie.value != null}">
-                <p>Welcome back,
+                <p class="text-center">Welcome back,
                     <c:out value='${cookie.firstNameCookie.value}' />
                 </p>
             </c:if>
 
-            <p class="list-shoping">
+            <p class="list-shoping text-center">
                 <a href="download?action=checkUser&amp;productCode=8601" class="">
                     86 (the band) - True Life Songs and Pictures
                 </a><br>

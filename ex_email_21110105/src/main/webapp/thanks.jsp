@@ -2,7 +2,7 @@
     <c:import url="/includes/header.html" />
     <c:import url="/includes/nav.html" />
 
-    <div class="wrap-ctn h-[40rem] py-40 mt-20">
+    <div class="wrap-ctn h-[0rem] py-40 mt-20">
 
         <div class="container mx-auto">
 

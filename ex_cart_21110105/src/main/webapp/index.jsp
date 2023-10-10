@@ -4,17 +4,17 @@
     <c:import url="/includes/header.html" />
     <c:import url="/includes/nav.html" />
     <h1 class="text-center">CD list</h1>
-    <div class="wrap-ctn mx-auto min-h-[40rem] py-10 mt-20 container">
+    <div class="wrap-ctn mx-auto md:py-40 py-20 mt-20 container md:px-10 px-3">
 
-        <table class="table-auto w-full text-sm text-left text-gray-400">
+        <table class="table-auto w-full text-sm text-left text-gray-400 rounded-lg overflow-hidden">
             <thead>
                 <tr>
-                    <th>Description</th>
-                    <th class="right">Price</th>
+                    <th class="px-5 font-semibold">Description</th>
+                    <th class="px-5 font-semibold">Price</th>
                     <th>&nbsp;</th>
                 </tr>
             </thead>
-            <tbody class="bg-gray-800">
+            <tbody class="bg-gray-800 rounded-lg overflow-hidden">
                 <c:forEach var="product" items="${products}">
                     <tr>
                         <td class="px-6 py-4">
