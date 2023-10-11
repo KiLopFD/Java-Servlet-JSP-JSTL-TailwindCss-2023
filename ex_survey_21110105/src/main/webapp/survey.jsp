@@ -2,7 +2,7 @@
 
     <c:import url="/includes/header.html" />
     <c:import url="/includes/nav.html" />
-    <div class="wrap-ctn w-full mx-auto min-h-[40rem] py-10 mt-20">
+    <div class="wrap-ctn w-full mx-auto md:py-40 py-20 mt-20">
         <div class="inner-wrap form-custom mx-auto">
 
             <h1>Thanks for taking our survey!</h1>
